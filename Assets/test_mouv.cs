@@ -8,7 +8,7 @@ public class test_mouv : MonoBehaviour
     public Rigidbody2D rb;
     public float jumpForce;
     private float TimeSinceJump = 6.0f;
-    
+    public bool isJumping = false;
     
     
     
@@ -25,7 +25,19 @@ public class test_mouv : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed;
         rb.velocity = new Vector2(horizontalMovement, 0);
+
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            isJumping = true;
+        }
+
+        
     }
-    
+
+    void Jump()
+    {
+        rb.AddForce(new Vector2(0f, jumpForce));
+        isJumping = false;
+    }
 }
-  
