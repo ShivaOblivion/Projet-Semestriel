@@ -14,7 +14,7 @@ public class Dana_playmove : MonoBehaviour
     public float jumpForce;
     public LayerMask groundLayer;
     [Header("Refs")]
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private BoxCollider2D box2D;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
