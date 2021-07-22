@@ -18,7 +18,7 @@ public class Dana_playmove : MonoBehaviour
     private BoxCollider2D box2D;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
-
+public Dach
 
 
     private void Start()
