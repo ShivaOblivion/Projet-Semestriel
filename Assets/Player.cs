@@ -44,13 +44,6 @@ public class Player : MonoBehaviour
             rb.velocity = vel;
             Debug.Log("jump");
         }
-        else 
-        {
-            Vector2 vel = rb.velocity;
-            vel.y = jetPackJumpForce;
-            rb.velocity = vel;
-            Debug.Log("jetPackJumpForce");
-        }
     }
     //Grounded_tchek
     private bool IsGrounded()
