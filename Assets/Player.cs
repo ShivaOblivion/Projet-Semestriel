@@ -37,14 +37,14 @@ public class Player : MonoBehaviour
     // Jump fonction
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded()=true)
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             Vector2 vel = rb.velocity;
             vel.y = jumpForce;
             rb.velocity = vel;
             Debug.Log("jump");
         }
-        else(Input.GetButtonDown("Jump") && IsGrounded()=false)
+        else if (Input.GetButtonDown("Jump"))
         {
             Vector2 vel = rb.velocity;
             vel.y = jetPackJumpForce;
