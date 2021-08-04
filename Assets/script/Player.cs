@@ -11,11 +11,21 @@ public class Player : MonoBehaviour
     public float distanceCheckGrounded = 0.5f;
     public LayerMask groundLayer;
     public float jetPackJumpForce;
-
+    private bool boosting;
+    public float boostSpeed;
+    public float boostingTime;
+    private float SpeedInitial;
+    private float boostTimeur;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        SpeedInitial = playerSpeed;
+        boosting = false;
+        boostTimeur = 0;
+
     }
 
     // Update is called once per frame
@@ -23,6 +33,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        ;
     }
    
     // Move fonction
@@ -32,8 +43,41 @@ public class Player : MonoBehaviour
         Vector2 vel = rb.velocity;
         vel.x = horizontalMove;
         rb.velocity = vel;
-    }
+        
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+        
 
+        if (boosting)
+        {
+            boostTimeur += Time.deltaTime;
+            
+            if (boostTimeur >=boostingTime)
+            {
+                playerSpeed = SpeedInitial;
+                boostingTime = 0;
+                boosting = true;
+
+            }
+        }
+        
+    }
+    //buff debuff 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "speedBoost")
+        {
+            boosting = true;
+            playerSpeed += boostSpeed;
+            Destroy(other.gameObject);
+        }
+    }
     // Jump fonction
     void Jump()
     {
@@ -43,15 +87,21 @@ public class Player : MonoBehaviour
             vel.y = jumpForce;
             rb.velocity = vel;
             Debug.Log("jump");
+            animator.SetBool("isJumping", !IsGrounded());  
         }
         else if (Input.GetButtonDown("Jump"))
         {
             Vector2 vel = rb.velocity;
             vel.y = jetPackJumpForce;
             rb.velocity = vel;
-            Debug.Log("jetPackJumpForce");
+            Debug.Log("jetPackJump");
+            animator.SetBool("isJetPackJumping",true);
+
         }
     }
+    
+        
+
     //Grounded_tchek
     private bool IsGrounded()
     {
@@ -65,6 +115,16 @@ public class Player : MonoBehaviour
 
         return false;
     }
-    
+    void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
 }
 
