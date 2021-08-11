@@ -21,18 +21,22 @@ public class Dash : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.X))
         {
             direction = 1;
+            Debug.Log("dach");
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow)&& Input.GetKeyDown(KeyCode.X))
         {
             direction = 2;
+            Debug.Log("dach");
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow)&& Input.GetKeyDown(KeyCode.X))
         {
             direction = 3;
+            Debug.Log("dach");
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow)&& Input.GetKeyDown(KeyCode.X))
         {
             direction = 4;
+            Debug.Log("dach");
 
         }
         else

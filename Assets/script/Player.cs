@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
     {
         if (other.tag == "speedBoost")
         {
+            Debug.Log("speedBoost");
             boosting = true;
             playerSpeed += boostSpeed;
             Destroy(other.gameObject);
