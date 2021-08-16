@@ -33,7 +33,20 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
-        ;
+        //Filp
+        Vector3 characterScale = transform.localScale;
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            characterScale.x = -10;
+        }
+
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            characterScale.x = 10;
+
+        }
+
+        transform.localScale = characterScale;
     }
    
     // Move fonction
@@ -111,7 +124,15 @@ public class Player : MonoBehaviour
             animator.SetBool("isJumping",false);
             animator.SetBool("isJetPackJumping", false);
         }
-        
+
+        if (IsGrounded())
+        {
+            animator.SetBool("isFlying",false);
+        }
+        else
+        {
+            animator.SetBool("isFlying",true);
+        }
     }
     
     
@@ -129,17 +150,6 @@ public class Player : MonoBehaviour
         }
 
         return false;
-    }
-    void Flip(float _velocity)
-    {
-        if (_velocity > 0.1f)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (_velocity < -0.1f)
-        {
-            spriteRenderer.flipX = true;
-        }
     }
 }
 
