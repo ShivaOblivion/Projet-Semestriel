@@ -88,7 +88,6 @@ public class Player : MonoBehaviour
             vel.y = jumpForce;
             rb.velocity = vel;
             Debug.Log("jump");
-            animator.SetBool("isJumping", !IsGrounded());  
         }
         else if (Input.GetButtonDown("Jump"))
         {
@@ -96,10 +95,25 @@ public class Player : MonoBehaviour
             vel.y = jetPackJumpForce;
             rb.velocity = vel;
             Debug.Log("jetPackJump");
-            animator.SetBool("isJetPackJumping",true);
 
         }
+        if(Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            animator.SetBool("isJumping",true);
+            
+        } 
+        else if (Input.GetButtonDown("Jump"))
+        {
+            animator.SetBool("isJetPackJumping", true);
+        }
+        else
+        {
+            animator.SetBool("isJumping",false);
+            animator.SetBool("isJetPackJumping", false);
+        }
+        
     }
+    
     
         
 
