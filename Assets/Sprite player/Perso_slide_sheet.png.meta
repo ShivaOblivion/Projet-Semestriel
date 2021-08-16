@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 9c59bce961142f74e84297cee97924b7
+guid: 32d3178571c1bba48b0b7632c128d9cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 325575250765752890
-    second: Jump bosst sheet_0
+      213: 8274558083003227653
+    second: Perso_slide_sheet_0
   - first:
-      213: 3264093317916208019
-    second: Jump bosst sheet_1
+      213: -3691783897809851146
+    second: Perso_slide_sheet_1
   - first:
-      213: -4746631449177821429
-    second: Jump bosst sheet_2
-  - first:
-      213: 2123992946440023984
-    second: Jump bosst sheet_3
-  - first:
-      213: 1066052985852801352
-    second: Jump bosst sheet_4
+      213: 8342895718042438243
+    second: Perso_slide_sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,53 +100,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump bosst sheet_0
+      name: Perso_slide_sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 23
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3a2d8137fca48400800000000000000
-      internalID: 325575250765752890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump bosst sheet_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 3
-        width: 19
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39b2f1824936c4d20800000000000000
-      internalID: 3264093317916208019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump bosst sheet_2
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 3
+        x: 3
+        y: 1
         width: 27
         height: 34
       alignment: 0
@@ -162,19 +114,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0fee0088d3902eb0800000000000000
-      internalID: -4746631449177821429
+      spriteID: 50e9eba6cb225d270800000000000000
+      internalID: 8274558083003227653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump bosst sheet_3
+      name: Perso_slide_sheet_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 4
-        width: 26
+        x: 31
+        y: 1
+        width: 27
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf2ef5d450f97d10800000000000000
-      internalID: 2123992946440023984
+      spriteID: 6fc6987da1624ccc0800000000000000
+      internalID: -3691783897809851146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump bosst sheet_4
+      name: Perso_slide_sheet_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 60
         y: 1
-        width: 24
-        height: 36
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 841308dda816bce00800000000000000
-      internalID: 1066052985852801352
+      spriteID: 36a0c08f37be7c370800000000000000
+      internalID: 8342895718042438243
       vertices: []
       indices: 
       edges: []

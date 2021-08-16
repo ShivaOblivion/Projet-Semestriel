@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: ef5781f12532dff4b83a6d02d277f92d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2852779153447903341
+    second: Attaque mob 4 Sheet_0
+  - first:
+      213: 2453290864847439279
+    second: Attaque mob 4 Sheet_1
+  - first:
+      213: -1820959786977968065
+    second: Attaque mob 4 Sheet_2
+  - first:
+      213: -4170321734871213313
+    second: Attaque mob 4 Sheet_3
+  - first:
+      213: -8713022029439892447
+    second: Attaque mob 4 Sheet_4
+  - first:
+      213: 6344496979032873488
+    second: Attaque mob 4 Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +107,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f19108974e868d0800000000000000
+      internalID: -2852779153447903341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa541f12b07db0220800000000000000
+      internalID: 2453290864847439279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3048eab8b6aab6e0800000000000000
+      internalID: -1820959786977968065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 4
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa19e93a7a0026c0800000000000000
+      internalID: -4170321734871213313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 24
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1240517b0a0251780800000000000000
+      internalID: -8713022029439892447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attaque mob 4 Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a1bc9436e2c0850800000000000000
+      internalID: 6344496979032873488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
