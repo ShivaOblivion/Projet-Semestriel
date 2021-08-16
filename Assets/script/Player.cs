@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         //Filp
+        Flip(rb.velocity.x);
     }
    
     // Move fonction
@@ -138,5 +139,17 @@ public class Player : MonoBehaviour
 
         return false;
     }
+    void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
 }
+
 
